@@ -1,8 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-package javacore.max3;
+
+package javacore.tinhtong;
 
 import java.util.Scanner;
 
@@ -10,7 +7,7 @@ import java.util.Scanner;
  *
  * @author ADMIN
  */
-public class Max3 {
+public class tinhtong {
 
     static Scanner input = new Scanner(System.in);
 
