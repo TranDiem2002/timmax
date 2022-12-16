@@ -89,13 +89,12 @@ public class Max3 {
         nhapmang(a, n);
         show(a, n);
 
-        //B1:tim so lon thu 3 trong mang
-        //c1: thuc hien sap xep sau do moi tim 
+        //Bài 1: Tìm số lơn thứ 3 trong mảng
+        //c1: thực hiện sắp xếp sau đó tìm 
         // Bubble_sort(a, n);
         //findmax3(a, n);
 
-        //c2: lan luot tim so lon thu nhat và thu hai sau do xoa chung khoi mang
-        // tim max cua day so con lai
+        //c2:lần lượt tìm số lớn nhất và lơn thứ hai sau đó xóa chúng khỏi mảng
         // findmax3_c2(a, n);
          
        
