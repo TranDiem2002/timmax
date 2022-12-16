@@ -31,12 +31,16 @@ public class Max3 {
     }
 
     public static void findmax3(int[] a, int n) {
-        int max = a[n - 1], dem = 0;
-        for (int i = n - 2; i > 0; i--) {
-            if (a[i] != max && dem == 1) {
-                System.out.println("So lon thu 3 cua mang: " + a[i]);
+        int max, dem = 1;// vi vị trí cuối cùng luôn là số lớn nhất của mảng
+        for (int i = n - 1; i > 0; i--) {
+            max = a[i];
+            if (a[i - 1] != max && dem == 2) {
+                System.out.println("\nSo lon thu 3 cua mang: " + a[i - 1]);
+                return;
             }
-            dem += 1;
+            if (a[i - 1] != max) {
+                dem += 1;
+            }
         }
     }
 
@@ -66,24 +70,6 @@ public class Max3 {
         System.out.println("so thu 3 lon nhat trong mang " + max3);
     }
 
-    //tinh tong tung cap trong mang [1,4,9,3,8]->[5,12,8]
-    public static void tinhtong(int[] a, int n, int[] b) {
-        int i = 0;
-        if (n % 2 == 0) {
-            for (int j = 0; j < n - 1;) {
-                b[i++] = a[j] + a[j + 1];
-                j += 2;
-            }
-        } else {
-            for (int j = 0; j < n - 2;) {
-                b[i++] = a[j] + a[j + 1];
-                j += 2;
-            }
-            b[i++] = a[n - 1];
-        }
-
-    }
-
     public static void show(int[] a, int n) {
         for (int i = 0; i < n; i++) {
             System.out.print(a[i] + "   ");
@@ -108,7 +94,8 @@ public class Max3 {
         // Bubble_sort(a, n);
         //findmax3(a, n);
 
-        //c2: 
+        //c2: lan luot tim so lon thu nhat và thu hai sau do xoa chung khoi mang
+        // tim max cua day so con lai
         // findmax3_c2(a, n);
          
        
